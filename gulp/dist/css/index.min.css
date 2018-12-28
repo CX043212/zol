@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 1200px;
+  height: 30px;
+  background: #f5f5f5;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #59616c;
+  line-height: 30px; }
+  header p {
+    fontsize: 12px;
+    margin-left: 25px;
+    margin-right: 23px;
+    float: left; }
+  header a:first-of-type {
+    float: left;
+    color: #59616c; }
+  header a {
+    color: #3465c2; }
+  header a:hover {
+    color: red; }
+  header ul {
+    float: right; }
+    header ul a {
+      float: left;
+      margin-left: 20px;
+      color: #59616c; }
+    header ul span {
+      width: 1px;
+      height: 12px;
+      background: #9b9b9b;
+      display: block;
+      margin: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      float: left; }
+    header ul #two, header ul #eight {
+      width: 62px;
+      position: relative; }
+      header ul #two div, header ul #eight div {
+        background: url(../../dist/img/topbar_ico.png) no-repeat 0 -45px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 0;
+        top: 15px; }
+      header ul #two #tel, header ul #eight #tel {
+        display: none; }
+      header ul #two #buyer, header ul #eight #buyer {
+        display: none;
+        width: 62px; }
+    header ul #five {
+      width: 62px;
+      position: relative; }
+      header ul #five div {
+        background: url(../../dist/img/topbar_ico.png) no-repeat -10px -7px;
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        left: -13px;
+        top: 10px; }
+    header ul img {
+      width: 60px;
+      height: 60px;
+      display: none;
+      float: left; }
+  header #eight:hover #tel {
+    display: block;
+    color: black;
+    position: absolute;
+    background: white;
+    text-align: center; }
+  header #five:hover img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    color: black;
+    position: absolute; }
+  header #two:hover #buyer {
+    width: 70px;
+    display: block;
+    color: black;
+    position: absolute;
+    background: white;
+    height: 80px;
+    z-index: 1000;
+    margin-top: 15px; }
+
+nav {
+  width: 1200px;
+  height: 160px;
+  background: green;
+  margin: 0 auto;
+  font-size: 12px;
+  color: black; }
+  nav img {
+    width: 130px;
+    height: 60px;
+    margin-top: 33px;
+    float: left; }
+  nav #place {
+    width: 66px;
+    height: 26px;
+    background: white;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 26px; }
+  nav #key {
+    width: 600px;
+    height: 36px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 37px;
+    position: relative; }
+    nav #key #txt1 {
+      width: 460px;
+      height: 36px;
+      background: white;
+      border: 1px solid red;
+      float: left; }
+    nav #key a {
+      background: #eef1ea;
+      position: absolute;
+      top: 10px;
+      left: 300px;
+      color: black; }
+    nav #key a:last-of-type {
+      position: absolute;
+      top: 10px;
+      left: 383px; }
+    nav #key #search {
+      width: 77px;
+      height: 38px;
+      background: red;
+      float: left; }
+  nav ul {
+    margin-top: 44px;
+    float: right; }
+    nav ul a:first-of-type div {
+      background: url(../../dist/img/head.png) no-repeat 0 -167px;
+      width: 22px;
+      height: 22px;
+      float: left; }
+    nav ul a {
+      float: left;
+      margin-right: 20px;
+      color: black; }
+    nav ul a:last-of-type div {
+      background: url(../../dist/img/head.png) no-repeat 0 -213px;
+      width: 22px;
+      height: 22px;
+      float: left; }
+    nav ul a:nth-of-type(2) div {
+      background: url(../../dist/img/head.png) no-repeat 0 -190px;
+      width: 22px;
+      height: 22px;
+      float: left; }
+
+#banner {
+  width: 1200px;
+  height: 438px;
+  background: orange;
+  margin: 0 auto;
+  border-bottom: 35px solid #f7f7f7; }
+  #banner a {
+    margin-left: 26px;
+    color: black;
+    height: 40px;
+    line-height: 40px; }
+  #banner a:hover {
+    color: red; }
+  #banner #line {
+    position: absolute;
+    z-index: 1000;
+    color: #fffeff;
+    font-size: 14px;
+    width: 160px;
+    height: 438px;
+    background: #454545; }
+    #banner #line li {
+      width: 143px;
+      height: 52px;
+      line-height: 52px;
+      border-bottom: 1px solid #4d4d4d;
+      position: relative;
+      font-size: 15px; }
+      #banner #line li div {
+        width: 30px;
+        height: 20px; }
+      #banner #line li a {
+        margin-left: 40px; }
+  #banner #first {
+    margin-left: 190px; }
+  #banner #line li:first-of-type div {
+    background: url(../../dist/img/head.png) no-repeat -37px 0;
+    position: absolute;
+    top: 15px;
+    left: 13px; }
+  #banner #line li:first-of-type {
+    background: #ed363a;
+    width: 160px;
+    height: 40px;
+    line-height: 40px; }
+  #banner #line li:nth-of-type(2) div {
+    background: url(../../dist/img/head.png) no-repeat -37px 0;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner #line li:nth-of-type(3) div {
+    background: url(../../dist/img/head.png) no-repeat -30px -20px;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner #line li:nth-of-type(4) div {
+    background: url(../../dist/img/head.png) no-repeat -32px -133px;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner #line li:nth-of-type(5) div {
+    background: url(../../dist/img/head.png) no-repeat -35px -36px;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner #line li:nth-of-type(6) div {
+    background: url(../../dist/img/head.png) no-repeat -35px -60px;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner #line li:nth-of-type(7) div {
+    background: url(../../dist/img/head.png) no-repeat -30px -92px;
+    position: absolute;
+    top: 20px;
+    left: 13px; }
+  #banner img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px; }
+
+#group {
+  width: 1200px;
+  height: 564px;
+  background: blue;
+  position: relative;
+  margin: 0 auto; }
+  #group img {
+    position: absolute;
+    bottom: 0;
+    left: -20px; }

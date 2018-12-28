@@ -8,3 +8,119 @@ li{
 a{
 	text-decoration:none;
 }
+$fontSize:12px;
+@mixin size($width,$height,$background){
+	width: $width;
+	height: $height;
+	background: $background;
+}
+// @function margin($key){
+//  	@return map-get($colors,$key);
+// }
+header{
+	@include size(1200px,30px,#f5f5f5);
+	margin:0 auto;
+	font-size:$fontSize;
+	color:#59616c;
+	line-height:30px;
+		p{
+			fontsize:$fontSize;
+			margin-left:25px;
+			margin-right:23px;
+			float:left;
+		}
+		a:first-of-type{
+			float:left;
+			color:#59616c;
+		}
+		a{
+			color:#3465c2;
+		}
+		a:hover{
+			color:red;
+		}
+		ul{
+			float:right;
+			a{
+				float:left;
+				margin-left:20px;
+				color:#59616c;
+			}
+			span{
+				@include size(1px,12px,#9b9b9b);
+				display:block;
+				margin: auto;
+				margin-left:20px;
+				margin-right:20px;
+				margin-top:10px;
+				float:left;
+			}
+			#two,#eight{
+				width:62px;
+				position:relative;
+				div{
+					background:url(../../dist/img/topbar_ico.png) no-repeat 0 -45px;
+						width:10px;
+						height:10px;
+						position:absolute;
+						right:0;
+						top:15px;
+					}
+					#tel{display:none;}
+					#buyer{
+						display:none;
+						width:62px;
+					}
+			}
+			#five{
+				width:62px;
+				position:relative;
+				div{
+					background:url(../../dist/img/topbar_ico.png) no-repeat -10px -7px;
+					width:10px;
+					height:20px;
+					position:absolute;
+					left:-13px;
+					top:10px;	
+				}
+			}
+			img{
+				width:60px;
+				height:60px;
+				display:none;
+				float:left;
+			}
+		}
+		#eight:hover{
+			#tel{
+				display:block;
+				color:black;
+				position:absolute;
+				background:white;
+				text-align:center;
+				}
+			
+		}
+		#five:hover{
+			img{
+				width:150px;
+				height:150px;
+				display:block;
+				color:black;
+				position:absolute;
+			}
+		}
+		#two:hover{
+			#buyer{
+				width:70px;
+				display:block;
+				color:black;
+				position:absolute;
+				background:white;
+				height:80px;
+				z-index:1000;
+				margin-top:15px;
+			}
+			
+		}
+}	
