@@ -5,8 +5,11 @@
 li {
   list-style: none; }
 
-a {
+a, #computer div p {
   text-decoration: none; }
+
+a:hover, #computer div p:hover {
+  color: red; }
 
 header {
   width: 1200px;
@@ -21,16 +24,16 @@ header {
     margin-left: 25px;
     margin-right: 23px;
     float: left; }
-  header a:first-of-type {
+  header a:first-of-type, header #computer div p:first-of-type, #computer div header p:first-of-type {
     float: left;
     color: #59616c; }
-  header a {
+  header a, header #computer div p, #computer div header p {
     color: #3465c2; }
-  header a:hover {
+  header a:hover, header #computer div p:hover, #computer div header p:hover {
     color: red; }
   header ul {
     float: right; }
-    header ul a {
+    header ul a, header ul #computer div p, #computer div header ul p {
       float: left;
       margin-left: 20px;
       color: #59616c; }
@@ -131,13 +134,13 @@ nav {
       background: white;
       border: 1px solid red;
       float: left; }
-    nav #key a {
+    nav #key a, nav #key #computer div p, #computer div nav #key p {
       background: #eef1ea;
       position: absolute;
-      top: 10px;
       left: 300px;
+      top: 10px;
       color: black; }
-    nav #key a:last-of-type {
+    nav #key a:last-of-type, nav #key #computer div p:last-of-type, #computer div nav #key p:last-of-type {
       position: absolute;
       top: 10px;
       left: 383px; }
@@ -149,21 +152,21 @@ nav {
   nav ul {
     margin-top: 44px;
     float: right; }
-    nav ul a:first-of-type div {
+    nav ul a:first-of-type div, nav ul #computer div p:first-of-type div, #computer div nav ul p:first-of-type div {
       background: url(../../dist/img/head.png) no-repeat 0 -167px;
       width: 22px;
       height: 22px;
       float: left; }
-    nav ul a {
+    nav ul a, nav ul #computer div p, #computer div nav ul p {
       float: left;
       margin-right: 20px;
       color: black; }
-    nav ul a:last-of-type div {
+    nav ul a:last-of-type div, nav ul #computer div p:last-of-type div, #computer div nav ul p:last-of-type div {
       background: url(../../dist/img/head.png) no-repeat 0 -213px;
       width: 22px;
       height: 22px;
       float: left; }
-    nav ul a:nth-of-type(2) div {
+    nav ul a:nth-of-type(2) div, nav ul #computer div p:nth-of-type(2) div, #computer div nav ul p:nth-of-type(2) div {
       background: url(../../dist/img/head.png) no-repeat 0 -190px;
       width: 22px;
       height: 22px;
@@ -175,12 +178,12 @@ nav {
   background: orange;
   margin: 0 auto;
   border-bottom: 35px solid #f7f7f7; }
-  #banner a {
+  #banner a, #banner #computer div p, #computer div #banner p {
     margin-left: 26px;
     color: black;
     height: 40px;
     line-height: 40px; }
-  #banner a:hover {
+  #banner a:hover, #banner #computer div p:hover, #computer div #banner p:hover {
     color: red; }
   #banner #line {
     position: absolute;
@@ -200,50 +203,50 @@ nav {
       #banner #line li div {
         width: 30px;
         height: 20px; }
-      #banner #line li a {
+      #banner #line li a, #banner #line li #computer div p, #computer div #banner #line li p {
         margin-left: 40px; }
   #banner #first {
     margin-left: 190px; }
   #banner #line li:first-of-type div {
     background: url(../../dist/img/head.png) no-repeat -37px 0;
     position: absolute;
-    top: 15px;
-    left: 13px; }
+    left: 13px;
+    top: 15px; }
   #banner #line li:first-of-type {
-    background: #ed363a;
     width: 160px;
     height: 40px;
+    background: #ed363a;
     line-height: 40px; }
   #banner #line li:nth-of-type(2) div {
     background: url(../../dist/img/head.png) no-repeat -37px 0;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner #line li:nth-of-type(3) div {
     background: url(../../dist/img/head.png) no-repeat -30px -20px;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner #line li:nth-of-type(4) div {
     background: url(../../dist/img/head.png) no-repeat -32px -133px;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner #line li:nth-of-type(5) div {
     background: url(../../dist/img/head.png) no-repeat -35px -36px;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner #line li:nth-of-type(6) div {
     background: url(../../dist/img/head.png) no-repeat -35px -60px;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner #line li:nth-of-type(7) div {
     background: url(../../dist/img/head.png) no-repeat -30px -92px;
     position: absolute;
-    top: 20px;
-    left: 13px; }
+    left: 13px;
+    top: 20px; }
   #banner img {
     position: absolute;
     left: 0;
@@ -255,8 +258,406 @@ nav {
   height: 564px;
   background: blue;
   position: relative;
-  margin: 0 auto; }
-  #group img {
+  margin: 0 auto;
+  border-top: 2px solid #ed363b;
+  border-bottom: 56px solid #f7f7f7; }
+  #group #left {
     position: absolute;
     bottom: 0;
     left: -20px; }
+  #group #tuan {
+    position: absolute;
+    bottom: 43px;
+    left: 27px;
+    z-index: 1000; }
+    #group #tuan p {
+      color: #fdedff;
+      font-size: 14px;
+      z-index: 1009;
+      position: absolute;
+      left: 20px;
+      top: 5px; }
+  #group #pre, #group #next {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 160px;
+    font-size: 12px; }
+    #group #pre li, #group #next li {
+      color: black;
+      width: 227px;
+      height: 280px;
+      background: white;
+      border: 1px solid gray;
+      text-align: center; }
+      #group #pre li img, #group #next li img {
+        width: 220px;
+        height: 182px; }
+    #group #pre #price1, #group #next #price1 {
+      color: red; }
+      #group #pre #price1 span, #group #next #price1 span {
+        font-size: 14px; }
+  #group #loops {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    #group #loops li {
+      width: 353px;
+      height: 188px;
+      background: white; }
+      #group #loops li img {
+        height: 187px; }
+      #group #loops li div {
+        float: right;
+        text-align: center;
+        height: 160px;
+        width: 155px;
+        line-height: 25px;
+        margin-top: 27px;
+        font-size: 12px;
+        color: black; }
+        #group #loops li div a, #group #loops li #computer div p, #computer #group #loops li div p {
+          color: black; }
+        #group #loops li div p:first-of-type {
+          color: red; }
+        #group #loops li div p:nth-of-type(2) {
+          color: red;
+          width: 138px;
+          height: 22px;
+          background: #ffe1e5;
+          border-radius: 11px;
+          line-height: 22px; }
+        #group #loops li div p:nth-of-type(3) {
+          width: 155px;
+          height: 30px;
+          background: #fb4367;
+          border-radius: 3px;
+          color: white;
+          margin-top: 10px; }
+
+#cash {
+  width: 1200px;
+  height: 100px;
+  background: pink;
+  margin: 0 auto; }
+  #cash #cash1 {
+    position: relative;
+    float: left; }
+    #cash #cash1 img {
+      width: 160px;
+      height: 100px; }
+    #cash #cash1 #money {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      z-index: 1000; }
+      #cash #cash1 #money p:first-of-type {
+        font-size: 22px;
+        color: white;
+        font-weight: 800;
+        line-height: 38px; }
+      #cash #cash1 #money p:last-of-type {
+        font-size: 10px;
+        color: #f89a74; }
+      #cash #cash1 #money a, #cash #cash1 #money #computer div p, #computer div #cash #cash1 #money p {
+        font-size: 14px;
+        color: #ffe1c2;
+        line-height: 30px; }
+  #cash #cash2, #cash #cash3, #cash #cash4, #cash #cash5 {
+    position: relative;
+    float: left; }
+    #cash #cash2 img, #cash #cash3 img, #cash #cash4 img, #cash #cash5 img {
+      width: 260px;
+      height: 100px;
+      background: white; }
+    #cash #cash2 #money, #cash #cash3 #money, #cash #cash4 #money, #cash #cash5 #money {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 258px;
+      z-index: 1000; }
+      #cash #cash2 #money p:first-of-type, #cash #cash3 #money p:first-of-type, #cash #cash4 #money p:first-of-type, #cash #cash5 #money p:first-of-type {
+        font-size: 24px;
+        color: white;
+        font-weight: 800;
+        line-height: 38px;
+        float: left;
+        margin-right: 10px; }
+      #cash #cash2 #money p:nth-of-type(2), #cash #cash3 #money p:nth-of-type(2), #cash #cash4 #money p:nth-of-type(2), #cash #cash5 #money p:nth-of-type(2) {
+        font-size: 12px;
+        color: white; }
+      #cash #cash2 #money p:last-of-type, #cash #cash3 #money p:last-of-type, #cash #cash4 #money p:last-of-type, #cash #cash5 #money p:last-of-type {
+        font-size: 12px;
+        color: #f89a74;
+        margin-bottom: 10px; }
+      #cash #cash2 #money a, #cash #cash3 #money a, #cash #cash4 #money a, #cash #cash5 #money a, #cash #cash2 #money #computer div p, #computer div #cash #cash2 #money p, #cash #cash3 #money #computer div p, #computer div #cash #cash3 #money p, #cash #cash4 #money #computer div p, #computer div #cash #cash4 #money p, #cash #cash5 #money #computer div p, #computer div #cash #cash5 #money p {
+        font-size: 14px;
+        color: #ffe1c2;
+        line-height: 30px;
+        border-top: 1px solid gray;
+        width: 215px;
+        display: block;
+        text-align: center; }
+
+#urban {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #urban span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -140px -90px; }
+  #urban p:first-of-type {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a;
+    float: left; }
+  #urban p:nth-of-type(2) {
+    float: left;
+    padding-top: 50px;
+    padding-left: 13px;
+    font-size: 12px;
+    color: #97998c; }
+  #urban p:last-of-type {
+    font-size: 12px;
+    float: right;
+    padding-top: 50px;
+    padding-right: 35px; }
+  #urban a, #urban #computer div p, #computer div #urban p {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -150px -287px; }
+
+#mobile {
+  margin: 0 auto;
+  width: 1200px;
+  height: 558px;
+  background: pink; }
+  #mobile #first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #mobile #first li {
+      border-right: 2px solid white; }
+  #mobile #last {
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #mobile #last li a, #mobile #last li #computer div p, #computer div #mobile #last li p {
+      color: black; }
+    #mobile #last li p:first-of-type {
+      color: #969a9d; }
+    #mobile #last li p:nth-of-type(2) {
+      color: #ff2a37;
+      float: left;
+      margin-left: 30px; }
+    #mobile #last li p:last-of-type {
+      color: #969a9d; }
+    #mobile #last li span {
+      border: 1px solid red;
+      border-radius: 7px;
+      margin-left: 10px;
+      padding: 5px; }
+
+#select {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #select span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -140px -350px; }
+  #select p {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a; }
+
+#earphone {
+  width: 1160px;
+  height: 656px;
+  background: white;
+  margin: 0 auto;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  position: relative; }
+  #earphone #first {
+    position: relative;
+    width: 1120px;
+    background: green; }
+    #earphone #first ul li {
+      width: 100px;
+      height: 45px;
+      background: #ececec;
+      text-align: center;
+      line-height: 45px;
+      border-bottom: 1px solid white;
+      display: block; }
+    #earphone #first img {
+      position: absolute;
+      left: 100px;
+      top: 0;
+      height: 230px;
+      width: 640px;
+      float: right; }
+  #earphone #second {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #earphone #second img {
+      width: 210px;
+      height: 230px; }
+  #earphone #three img {
+    height: 180px;
+    width: 185px;
+    float: left; }
+  #earphone #three #last {
+    width: 420px; }
+  #earphone img {
+    float: left; }
+
+#brand {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #brand span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -139px -132px; }
+  #brand p:first-of-type {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a;
+    float: left; }
+  #brand p:nth-of-type(2) {
+    float: left;
+    padding-top: 50px;
+    padding-left: 13px;
+    font-size: 12px;
+    color: #97998c; }
+
+#computer {
+  width: 1200px;
+  height: 342px;
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  #computer div {
+    background: pink;
+    border: 3px solid white; }
+    #computer div img {
+      width: 236px;
+      height: 250px; }
+    #computer div a, #computer div p {
+      font-size: 12px;
+      color: black;
+      text-align: center;
+      line-height: 30px;
+      display: block; }
+    #computer div p {
+      font-size: 12px;
+      color: black;
+      text-align: center; }
+      #computer div p span {
+        color: red; }
+
+#game {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #game span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -135px -173px; }
+  #game p {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a;
+    float: left; }
+
+#game1 {
+  width: 1200px;
+  height: 570px;
+  background: yellow;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  #game1 #right {
+    width: 592px;
+    height: 570px;
+    background: pink; }
+    #game1 #right #top {
+      width: 592px;
+      height: 45px;
+      background: #7095ee;
+      line-height: 45px; }
+      #game1 #right #top span {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white; }
+      #game1 #right #top span:nth-of-type(2) {
+        float: right; }
+    #game1 #right #bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #game1 #right #bottom div {
+        width: 180px;
+        height: 260px;
+        background: gray;
+        float: left; }
+        #game1 #right #bottom div img {
+          width: 180px;
+          height: 180px; }
+  #game1 #left {
+    width: 592px;
+    height: 570px;
+    background: pink; }
+    #game1 #left #top {
+      width: 592px;
+      height: 45px;
+      background: #7095ee;
+      line-height: 45px; }
+      #game1 #left #top span {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white; }
+      #game1 #left #top span:nth-of-type(2) {
+        float: right; }

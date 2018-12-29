@@ -8,11 +8,29 @@ li{
 a{
 	text-decoration:none;
 }
+a:hover{
+	color:red;
+}
 $fontSize:12px;
 @mixin size($width,$height,$background){
 	width: $width;
 	height: $height;
 	background: $background;
+}
+@mixin display($display,$flex-direction,$justify-content){
+	display:$display;
+	flex-direction:$flex-direction;
+	justify-content:$justify-content;
+}
+@mixin position($position,$left,$top){
+	position:$position;
+	left:$left;
+	top:$top;
+}
+@mixin positionr($position,$right,$top){
+	position:$position;
+	right:$right;
+	top:$top;
 }
 // @function margin($key){
 //  	@return map-get($colors,$key);
@@ -62,9 +80,8 @@ header{
 					background:url(../../dist/img/topbar_ico.png) no-repeat 0 -45px;
 						width:10px;
 						height:10px;
-						position:absolute;
-						right:0;
-						top:15px;
+						@include positionr(absolute,0,15px);
+						
 					}
 					#tel{display:none;}
 					#buyer{
@@ -79,9 +96,8 @@ header{
 					background:url(../../dist/img/topbar_ico.png) no-repeat -10px -7px;
 					width:10px;
 					height:20px;
-					position:absolute;
-					left:-13px;
-					top:10px;	
+					@include position(absolute,-13px,10px);
+
 				}
 			}
 			img{
