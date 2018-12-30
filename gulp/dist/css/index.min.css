@@ -99,6 +99,27 @@ header {
     z-index: 1000;
     margin-top: 15px; }
 
+#guide {
+  width: 1200px;
+  height: 180px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  #guide ul {
+    margin-top: 21px; }
+    #guide ul li a, #guide ul li #computer div p, #computer div #guide ul li p {
+      color: black;
+      line-height: 28px; }
+  #guide ul:nth-of-type(5) div {
+    background: url(../../dist/img/topbar_ico.png) no-repeat -10px -7px;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: -13px;
+    top: 10px; }
+
 nav {
   width: 1200px;
   height: 160px;
@@ -520,6 +541,15 @@ nav {
       height: 230px;
       width: 640px;
       float: right; }
+    #earphone #first #circle {
+      position: absolute;
+      left: 350px;
+      top: 200px;
+      z-index: 1000;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%; }
   #earphone #second {
     position: absolute;
     top: 0;
@@ -619,37 +649,45 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
-  #game1 #right {
+  #game1 #right, #game1 #digital1 #left, #digital1 #game1 #left {
     width: 592px;
     height: 570px;
     background: pink; }
-    #game1 #right #top {
+    #game1 #right #top, #game1 #digital1 #left #top, #digital1 #game1 #left #top {
       width: 592px;
       height: 45px;
-      background: #7095ee;
+      background: #9b74e9;
       line-height: 45px; }
-      #game1 #right #top span {
+      #game1 #right #top span, #game1 #digital1 #left #top span, #digital1 #game1 #left #top span {
         margin-left: 10px;
         margin-right: 10px;
         color: white; }
-      #game1 #right #top span:nth-of-type(2) {
+      #game1 #right #top span:nth-of-type(2), #game1 #digital1 #left #top span:nth-of-type(2), #digital1 #game1 #left #top span:nth-of-type(2) {
         float: right; }
-    #game1 #right #bottom {
+    #game1 #right #bottom, #game1 #digital1 #left #bottom, #digital1 #game1 #left #bottom {
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
-      #game1 #right #bottom div {
+      #game1 #right #bottom div, #game1 #digital1 #left #bottom div, #digital1 #game1 #left #bottom div {
         width: 180px;
         height: 260px;
         background: gray;
         float: left; }
-        #game1 #right #bottom div img {
+        #game1 #right #bottom div img, #game1 #digital1 #left #bottom div img, #digital1 #game1 #left #bottom div img {
           width: 180px;
           height: 180px; }
+      #game1 #right #bottom p, #game1 #digital1 #left #bottom p, #digital1 #game1 #left #bottom p {
+        color: red;
+        font-size: 12px;
+        line-height: 24px; }
+      #game1 #right #bottom a, #game1 #digital1 #left #bottom a, #digital1 #game1 #left #bottom a, #game1 #right #bottom #computer div p, #computer div #game1 #right #bottom p, #game1 #digital1 #left #bottom #computer div p, #computer div #game1 #digital1 #left #bottom p, #digital1 #game1 #left #bottom #computer div p, #computer div #digital1 #game1 #left #bottom p {
+        color: black;
+        font-size: 12px; }
   #game1 #left {
     width: 592px;
     height: 570px;
-    background: pink; }
+    background: pink;
+    position: relative; }
     #game1 #left #top {
       width: 592px;
       height: 45px;
@@ -659,5 +697,308 @@ nav {
         margin-left: 10px;
         margin-right: 10px;
         color: white; }
-      #game1 #left #top span:nth-of-type(2) {
+      #game1 #left #top span:nth-of-type(2), #game1 #left #top span:nth-of-type(3), #game1 #left #top span:nth-of-type(4) {
         float: right; }
+    #game1 #left #bottom img {
+      position: absolute; }
+    #game1 #left #bottom #circle {
+      position: absolute;
+      left: 300px;
+      top: 270px;
+      z-index: 1000;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%; }
+    #game1 #left #bottom1, #game1 #left #bottom2, #game1 #left #bottom3 {
+      position: absolute;
+      left: 0;
+      top: 320px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #game1 #left #bottom1 img, #game1 #left #bottom2 img, #game1 #left #bottom3 img {
+        width: 195px;
+        height: 190px; }
+      #game1 #left #bottom1 p, #game1 #left #bottom2 p, #game1 #left #bottom3 p {
+        color: red;
+        font-size: 12px;
+        line-height: 24px; }
+      #game1 #left #bottom1 a, #game1 #left #bottom1 #computer div p, #computer div #game1 #left #bottom1 p, #game1 #left #bottom2 a, #game1 #left #bottom2 #computer div p, #computer div #game1 #left #bottom2 p, #game1 #left #bottom3 a, #game1 #left #bottom3 #computer div p, #computer div #game1 #left #bottom3 p {
+        color: black;
+        font-size: 12px;
+        display: block; }
+
+#electric {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #electric span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -144px -392px; }
+  #electric p {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a;
+    float: left; }
+
+#appliance {
+  width: 1200px;
+  height: 563px;
+  background: yellow;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  #appliance #left {
+    width: 592px;
+    height: 550px;
+    background: pink;
+    position: relative; }
+    #appliance #left #top img {
+      position: absolute;
+      width: 595px;
+      height: 397px; }
+    #appliance #left #top #circle {
+      position: absolute;
+      left: 300px;
+      top: 370px;
+      z-index: 1000;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%; }
+    #appliance #left #bottom1 {
+      position: absolute;
+      left: 0;
+      top: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #appliance #left #bottom1 img {
+        width: 149px;
+        height: 79px; }
+      #appliance #left #bottom1 a, #appliance #left #bottom1 #computer div p, #computer div #appliance #left #bottom1 p {
+        border-bottom: 1px solid gray; }
+    #appliance #left #bottom2 {
+      position: absolute;
+      left: 0;
+      top: 480px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #appliance #left #bottom2 img {
+        width: 149px;
+        height: 80px; }
+  #appliance #right, #appliance #digital1 #left, #digital1 #appliance #left {
+    width: 592px;
+    height: 560px;
+    background: pink; }
+    #appliance #right #top, #appliance #digital1 #left #top, #digital1 #appliance #left #top {
+      width: 592px;
+      height: 45px;
+      background: #e78c95;
+      line-height: 45px; }
+      #appliance #right #top span, #appliance #digital1 #left #top span, #digital1 #appliance #left #top span {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        float: right; }
+    #appliance #right #bottom, #appliance #digital1 #left #bottom, #digital1 #appliance #left #bottom, #appliance #right #bottom1, #appliance #digital1 #left #bottom1, #digital1 #appliance #left #bottom1, #appliance #right #bottom2, #appliance #digital1 #left #bottom2, #digital1 #appliance #left #bottom2, #appliance #right #bottom3, #appliance #digital1 #left #bottom3, #digital1 #appliance #left #bottom3, #appliance #right #bottom4, #appliance #digital1 #left #bottom4, #digital1 #appliance #left #bottom4 {
+      position: absolute; }
+      #appliance #right #bottom #bottoma, #appliance #digital1 #left #bottom #bottoma, #digital1 #appliance #left #bottom #bottoma, #appliance #right #bottom1 #bottoma, #appliance #digital1 #left #bottom1 #bottoma, #digital1 #appliance #left #bottom1 #bottoma, #appliance #right #bottom2 #bottoma, #appliance #digital1 #left #bottom2 #bottoma, #digital1 #appliance #left #bottom2 #bottoma, #appliance #right #bottom3 #bottoma, #appliance #digital1 #left #bottom3 #bottoma, #digital1 #appliance #left #bottom3 #bottoma, #appliance #right #bottom4 #bottoma, #appliance #digital1 #left #bottom4 #bottoma, #digital1 #appliance #left #bottom4 #bottoma {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        #appliance #right #bottom #bottoma div, #appliance #digital1 #left #bottom #bottoma div, #digital1 #appliance #left #bottom #bottoma div, #appliance #right #bottom1 #bottoma div, #appliance #digital1 #left #bottom1 #bottoma div, #digital1 #appliance #left #bottom1 #bottoma div, #appliance #right #bottom2 #bottoma div, #appliance #digital1 #left #bottom2 #bottoma div, #digital1 #appliance #left #bottom2 #bottoma div, #appliance #right #bottom3 #bottoma div, #appliance #digital1 #left #bottom3 #bottoma div, #digital1 #appliance #left #bottom3 #bottoma div, #appliance #right #bottom4 #bottoma div, #appliance #digital1 #left #bottom4 #bottoma div, #digital1 #appliance #left #bottom4 #bottoma div {
+          width: 180px;
+          height: 260px;
+          background: gray;
+          flex: 1;
+          padding-left: 8px;
+          padding-right: 9px; }
+          #appliance #right #bottom #bottoma div img, #appliance #digital1 #left #bottom #bottoma div img, #digital1 #appliance #left #bottom #bottoma div img, #appliance #right #bottom1 #bottoma div img, #appliance #digital1 #left #bottom1 #bottoma div img, #digital1 #appliance #left #bottom1 #bottoma div img, #appliance #right #bottom2 #bottoma div img, #appliance #digital1 #left #bottom2 #bottoma div img, #digital1 #appliance #left #bottom2 #bottoma div img, #appliance #right #bottom3 #bottoma div img, #appliance #digital1 #left #bottom3 #bottoma div img, #digital1 #appliance #left #bottom3 #bottoma div img, #appliance #right #bottom4 #bottoma div img, #appliance #digital1 #left #bottom4 #bottoma div img, #digital1 #appliance #left #bottom4 #bottoma div img {
+            width: 180px;
+            height: 180px; }
+        #appliance #right #bottom #bottoma p, #appliance #digital1 #left #bottom #bottoma p, #digital1 #appliance #left #bottom #bottoma p, #appliance #right #bottom1 #bottoma p, #appliance #digital1 #left #bottom1 #bottoma p, #digital1 #appliance #left #bottom1 #bottoma p, #appliance #right #bottom2 #bottoma p, #appliance #digital1 #left #bottom2 #bottoma p, #digital1 #appliance #left #bottom2 #bottoma p, #appliance #right #bottom3 #bottoma p, #appliance #digital1 #left #bottom3 #bottoma p, #digital1 #appliance #left #bottom3 #bottoma p, #appliance #right #bottom4 #bottoma p, #appliance #digital1 #left #bottom4 #bottoma p, #digital1 #appliance #left #bottom4 #bottoma p {
+          color: red;
+          font-size: 12px;
+          line-height: 24px; }
+        #appliance #right #bottom #bottoma a, #appliance #digital1 #left #bottom #bottoma a, #digital1 #appliance #left #bottom #bottoma a, #appliance #right #bottom #bottoma #computer div p, #computer div #appliance #right #bottom #bottoma p, #appliance #digital1 #left #bottom #bottoma #computer div p, #computer div #appliance #digital1 #left #bottom #bottoma p, #digital1 #appliance #left #bottom #bottoma #computer div p, #computer div #digital1 #appliance #left #bottom #bottoma p, #appliance #right #bottom1 #bottoma a, #appliance #digital1 #left #bottom1 #bottoma a, #digital1 #appliance #left #bottom1 #bottoma a, #appliance #right #bottom1 #bottoma #computer div p, #computer div #appliance #right #bottom1 #bottoma p, #appliance #digital1 #left #bottom1 #bottoma #computer div p, #computer div #appliance #digital1 #left #bottom1 #bottoma p, #digital1 #appliance #left #bottom1 #bottoma #computer div p, #computer div #digital1 #appliance #left #bottom1 #bottoma p, #appliance #right #bottom2 #bottoma a, #appliance #digital1 #left #bottom2 #bottoma a, #digital1 #appliance #left #bottom2 #bottoma a, #appliance #right #bottom2 #bottoma #computer div p, #computer div #appliance #right #bottom2 #bottoma p, #appliance #digital1 #left #bottom2 #bottoma #computer div p, #computer div #appliance #digital1 #left #bottom2 #bottoma p, #digital1 #appliance #left #bottom2 #bottoma #computer div p, #computer div #digital1 #appliance #left #bottom2 #bottoma p, #appliance #right #bottom3 #bottoma a, #appliance #digital1 #left #bottom3 #bottoma a, #digital1 #appliance #left #bottom3 #bottoma a, #appliance #right #bottom3 #bottoma #computer div p, #computer div #appliance #right #bottom3 #bottoma p, #appliance #digital1 #left #bottom3 #bottoma #computer div p, #computer div #appliance #digital1 #left #bottom3 #bottoma p, #digital1 #appliance #left #bottom3 #bottoma #computer div p, #computer div #digital1 #appliance #left #bottom3 #bottoma p, #appliance #right #bottom4 #bottoma a, #appliance #digital1 #left #bottom4 #bottoma a, #digital1 #appliance #left #bottom4 #bottoma a, #appliance #right #bottom4 #bottoma #computer div p, #computer div #appliance #right #bottom4 #bottoma p, #appliance #digital1 #left #bottom4 #bottoma #computer div p, #computer div #appliance #digital1 #left #bottom4 #bottoma p, #digital1 #appliance #left #bottom4 #bottoma #computer div p, #computer div #digital1 #appliance #left #bottom4 #bottoma p {
+          color: black;
+          font-size: 12px; }
+
+#digital {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative; }
+  #digital span {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    background: url(../../dist/img/zol-home-icons.png) no-repeat -140px -210px; }
+  #digital p:first-of-type {
+    padding-top: 42px;
+    padding-left: 38px;
+    font-size: 22px;
+    color: #2e2f2a;
+    float: left; }
+  #digital p:nth-of-type(2) {
+    float: left;
+    padding-top: 50px;
+    padding-left: 13px;
+    font-size: 12px;
+    color: #97998c; }
+
+#digital1 {
+  width: 1200px;
+  height: 645px;
+  background: yellow;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  #digital1 #right, #digital1 #left {
+    width: 592px;
+    height: 570px;
+    background: pink; }
+    #digital1 #right #top, #digital1 #left #top {
+      width: 592px;
+      height: 45px;
+      background: #eb9e74;
+      line-height: 45px;
+      position: relative; }
+      #digital1 #right #top span, #digital1 #left #top span {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white; }
+      #digital1 #right #top a, #digital1 #left #top a, #digital1 #right #top #computer div p, #computer div #digital1 #right #top p, #digital1 #left #top #computer div p, #computer div #digital1 #left #top p {
+        float: right;
+        color: white;
+        margin-right: 40px; }
+      #digital1 #right #top #tu, #digital1 #left #top #tu {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: -30px;
+        top: 16px;
+        z-index: 1000;
+        background: url(../../dist/img/zol-home-icons.png) no-repeat -150px -320px; }
+    #digital1 #right #bottom, #digital1 #left #bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #digital1 #right #bottom div, #digital1 #left #bottom div {
+        width: 180px;
+        height: 260px;
+        background: gray; }
+        #digital1 #right #bottom div img, #digital1 #left #bottom div img {
+          width: 170px;
+          height: 180px;
+          margin-left: 5px; }
+      #digital1 #right #bottom p, #digital1 #left #bottom p {
+        color: red;
+        font-size: 12px;
+        line-height: 24px; }
+      #digital1 #right #bottom a, #digital1 #left #bottom a, #digital1 #right #bottom #computer div p, #computer div #digital1 #right #bottom p, #digital1 #left #bottom #computer div p, #computer div #digital1 #left #bottom p {
+        color: black;
+        font-size: 12px; }
+    #digital1 #right #bran img, #digital1 #left #bran img {
+      width: 135px;
+      height: 77px;
+      float: left;
+      padding-left: 10px; }
+
+#hot {
+  width: 1200px;
+  height: 80px;
+  background: #f7f7f7;
+  margin: 0 auto; }
+  #hot p {
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px; }
+
+#hotsell {
+  width: 1200px;
+  height: 666px;
+  background: #f7f7f7;
+  margin: 0 auto; }
+  #hotsell #sell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #hotsell #sell div {
+      width: 230px;
+      height: 320px;
+      background: white;
+      margin-bottom: 15px; }
+    #hotsell #sell p {
+      color: red;
+      font-size: 12px;
+      line-height: 24px;
+      padding-left: 10px; }
+    #hotsell #sell a, #hotsell #sell #computer div p, #computer div #hotsell #sell p {
+      color: black;
+      font-size: 12px;
+      padding-left: 10px; }
+
+#guarantee {
+  width: 1200px;
+  height: 110px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  #guarantee div {
+    background: yellow;
+    position: relative;
+    width: 180px; }
+    #guarantee div a:first-of-type, #guarantee #computer div p:first-of-type, #computer #guarantee div p:first-of-type {
+      width: 60px;
+      height: 51px;
+      position: absolute;
+      left: 0;
+      top: 30px; }
+    #guarantee div a, #guarantee #computer div p, #computer #guarantee div p {
+      color: black; }
+    #guarantee div a:nth-of-type(2), #guarantee #computer div p:nth-of-type(2), #computer #guarantee div p:nth-of-type(2) {
+      font-size: 16px;
+      font-weight: 800;
+      position: absolute;
+      left: 80px;
+      top: 35px;
+      display: block; }
+    #guarantee div a:nth-of-type(3), #guarantee #computer div p:nth-of-type(3), #computer #guarantee div p:nth-of-type(3) {
+      font-size: 12px;
+      position: absolute;
+      left: 80px;
+      top: 65px; }
+  #guarantee div:first-of-type a:first-of-type, #guarantee #computer div:first-of-type p:first-of-type, #computer #guarantee div:first-of-type p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 0; }
+  #guarantee div:nth-of-type(2) a:first-of-type, #guarantee #computer div:nth-of-type(2) p:first-of-type, #computer #guarantee div:nth-of-type(2) p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 -50px; }
+  #guarantee div:nth-of-type(3) a:first-of-type, #guarantee #computer div:nth-of-type(3) p:first-of-type, #computer #guarantee div:nth-of-type(3) p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 -104px; }
+  #guarantee div:nth-of-type(4) a:first-of-type, #guarantee #computer div:nth-of-type(4) p:first-of-type, #computer #guarantee div:nth-of-type(4) p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 -156px; }
+  #guarantee div:nth-of-type(5) a:first-of-type, #guarantee #computer div:nth-of-type(5) p:first-of-type, #computer #guarantee div:nth-of-type(5) p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 -209px; }
+  #guarantee div:nth-of-type(6) a:first-of-type, #guarantee #computer div:nth-of-type(6) p:first-of-type, #computer #guarantee div:nth-of-type(6) p:first-of-type {
+    background: url(../../dist/img/service-bg.png) no-repeat 0 -260px; }
