@@ -140,3 +140,58 @@ header{
 			
 		}
 }	
+#footer{
+	@include size(1200px,173px,#2d2d2d);
+	margin:0 auto;
+	ul{
+		padding-top:38px;
+		li{
+			float:left;
+			border-right:1px solid #8997a4;
+			a{
+				padding:13px;
+			}
+		}
+	}
+	ul:first-of-type{
+		a{
+			color:white;
+			font-size:$fontSize;
+			
+		}
+	}
+	ul:nth-of-type(2){
+		a{
+			color:#8997a4;
+			font-size:$fontSize;
+		}
+	}
+	p{
+		color:#8997a4;
+		font-size:$fontSize;
+		padding-top:38px;
+	}
+	div{
+		float:right;
+		position:relative;
+		a{
+			color:white;
+			font-size:$fontSize;
+			@include position(absolute,-160px,0);	
+
+		}
+		//margin-right:285px;
+		span:first-of-type{
+			background:url(../../dist/img/icon.png) no-repeat 0 0;
+			width:25px;
+			height:25px;
+			@include position(absolute,-195px,0);	
+			}
+		span:last-of-type{
+			background:url(../../dist/img/icon.png) no-repeat 0 -22px;
+			width:25px;
+			height:25px;
+			@include position(absolute,-25px,0);	
+			}
+	}
+}

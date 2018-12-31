@@ -99,26 +99,51 @@ header {
     z-index: 1000;
     margin-top: 15px; }
 
-#guide {
+#footer {
   width: 1200px;
-  height: 180px;
-  background: #f7f7f7;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  #guide ul {
-    margin-top: 21px; }
-    #guide ul li a, #guide ul li #computer div p, #computer div #guide ul li p {
-      color: black;
-      line-height: 28px; }
-  #guide ul:nth-of-type(5) div {
-    background: url(../../dist/img/topbar_ico.png) no-repeat -10px -7px;
-    width: 10px;
-    height: 20px;
-    position: absolute;
-    left: -13px;
-    top: 10px; }
+  height: 173px;
+  background: #2d2d2d;
+  margin: 0 auto; }
+  #footer ul {
+    padding-top: 38px; }
+    #footer ul li {
+      float: left;
+      border-right: 1px solid #8997a4; }
+      #footer ul li a, #footer ul li #computer div p, #computer div #footer ul li p {
+        padding: 13px; }
+  #footer ul:first-of-type a, #footer ul:first-of-type #computer div p, #computer div #footer ul:first-of-type p {
+    color: white;
+    font-size: 12px; }
+  #footer ul:nth-of-type(2) a, #footer ul:nth-of-type(2) #computer div p, #computer div #footer ul:nth-of-type(2) p {
+    color: #8997a4;
+    font-size: 12px; }
+  #footer p {
+    color: #8997a4;
+    font-size: 12px;
+    padding-top: 38px; }
+  #footer div {
+    float: right;
+    position: relative; }
+    #footer div a, #footer #computer div p, #computer #footer div p {
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      left: -160px;
+      top: 0; }
+    #footer div span:first-of-type {
+      background: url(../../dist/img/icon.png) no-repeat 0 0;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: -195px;
+      top: 0; }
+    #footer div span:last-of-type {
+      background: url(../../dist/img/icon.png) no-repeat 0 -22px;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: -25px;
+      top: 0; }
 
 nav {
   width: 1200px;
@@ -199,14 +224,14 @@ nav {
   background: orange;
   margin: 0 auto;
   border-bottom: 35px solid #f7f7f7; }
-  #banner a, #banner #computer div p, #computer div #banner p {
+  #banner ul:first-of-type a, #banner ul:first-of-type #computer div p, #computer div #banner ul:first-of-type p {
     margin-left: 26px;
     color: black;
     height: 40px;
     line-height: 40px; }
-  #banner a:hover, #banner #computer div p:hover, #computer div #banner p:hover {
+  #banner ul:first-of-type a:hover, #banner ul:first-of-type #computer div p:hover, #computer div #banner ul:first-of-type p:hover {
     color: red; }
-  #banner #line {
+  #banner ul:first-of-type #line {
     position: absolute;
     z-index: 1000;
     color: #fffeff;
@@ -214,65 +239,99 @@ nav {
     width: 160px;
     height: 438px;
     background: #454545; }
-    #banner #line li {
+    #banner ul:first-of-type #line li {
       width: 143px;
       height: 52px;
       line-height: 52px;
       border-bottom: 1px solid #4d4d4d;
       position: relative;
       font-size: 15px; }
-      #banner #line li div {
+      #banner ul:first-of-type #line li div {
         width: 30px;
         height: 20px; }
-      #banner #line li a, #banner #line li #computer div p, #computer div #banner #line li p {
+      #banner ul:first-of-type #line li a, #banner ul:first-of-type #line li #computer div p, #computer div #banner ul:first-of-type #line li p {
         margin-left: 40px; }
-  #banner #first {
+  #banner ul:first-of-type #first {
     margin-left: 190px; }
-  #banner #line li:first-of-type div {
+  #banner ul:first-of-type #line li:first-of-type div {
     background: url(../../dist/img/head.png) no-repeat -37px 0;
     position: absolute;
     left: 13px;
     top: 15px; }
-  #banner #line li:first-of-type {
+  #banner ul:first-of-type #line li:first-of-type {
     width: 160px;
     height: 40px;
     background: #ed363a;
     line-height: 40px; }
-  #banner #line li:nth-of-type(2) div {
+  #banner ul:first-of-type #line li:nth-of-type(2) div {
     background: url(../../dist/img/head.png) no-repeat -37px 0;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner #line li:nth-of-type(3) div {
+  #banner ul:first-of-type #line li:nth-of-type(3) div {
     background: url(../../dist/img/head.png) no-repeat -30px -20px;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner #line li:nth-of-type(4) div {
+  #banner ul:first-of-type #line li:nth-of-type(4) div {
     background: url(../../dist/img/head.png) no-repeat -32px -133px;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner #line li:nth-of-type(5) div {
+  #banner ul:first-of-type #line li:nth-of-type(5) div {
     background: url(../../dist/img/head.png) no-repeat -35px -36px;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner #line li:nth-of-type(6) div {
+  #banner ul:first-of-type #line li:nth-of-type(6) div {
     background: url(../../dist/img/head.png) no-repeat -35px -60px;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner #line li:nth-of-type(7) div {
+  #banner ul:first-of-type #line li:nth-of-type(7) div {
     background: url(../../dist/img/head.png) no-repeat -30px -92px;
     position: absolute;
     left: 13px;
     top: 20px; }
-  #banner img {
+  #banner #lunbo img {
     position: absolute;
     left: 0;
     width: 100%;
     height: 400px; }
+  #banner #left {
+    background: url(../../dist/img/arrow.png) no-repeat -18px -20px;
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    left: 63px;
+    top: 400px;
+    z-index: 10005;
+    cursor: pointer; }
+  #banner #right, #banner #digital1 #left, #digital1 #banner #left {
+    background: url(../../dist/img/arrow.png) no-repeat -18px -113px;
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    left: 1317px;
+    top: 400px;
+    z-index: 10005;
+    cursor: pointer; }
+  #banner #circle {
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 700px;
+    top: 600px; }
+    #banner #circle li {
+      width: 10px;
+      height: 10px;
+      background: white;
+      float: left;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 5px; }
+    #banner #circle .current {
+      background: red; }
 
 #group {
   width: 1200px;
@@ -765,6 +824,8 @@ nav {
     position: relative; }
     #appliance #left #top img {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 595px;
       height: 397px; }
     #appliance #left #top #circle {
@@ -1002,3 +1063,56 @@ nav {
     background: url(../../dist/img/service-bg.png) no-repeat 0 -209px; }
   #guarantee div:nth-of-type(6) a:first-of-type, #guarantee #computer div:nth-of-type(6) p:first-of-type, #computer #guarantee div:nth-of-type(6) p:first-of-type {
     background: url(../../dist/img/service-bg.png) no-repeat 0 -260px; }
+
+#guide {
+  width: 1200px;
+  height: 180px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  #guide ul {
+    margin-top: 21px; }
+    #guide ul li a, #guide ul li #computer div p, #computer div #guide ul li p {
+      color: black;
+      line-height: 28px; }
+  #guide ul:nth-of-type(5) {
+    position: relative;
+    padding-left: 60px; }
+    #guide ul:nth-of-type(5) span {
+      background: url(../../dist/img/footer.png) no-repeat 0 -97px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  #guide ul:last-of-type {
+    position: relative;
+    padding-left: 60px; }
+    #guide ul:last-of-type span {
+      background: url(../../dist/img/footer.png) no-repeat 0 -227px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+    #guide ul:last-of-type li:last-of-type a, #guide ul:last-of-type li:last-of-type #computer div p, #computer div #guide ul:last-of-type li:last-of-type p {
+      background: red;
+      padding: 5px; }
+
+#huiding {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  opacity: 0.5; }
+  #huiding ul li {
+    width: 80px;
+    height: 50px;
+    background: black;
+    border-bottom: 1px solid gray; }
+    #huiding ul li a, #huiding ul li #computer div p, #computer div #huiding ul li p {
+      color: white;
+      font-size: 12px;
+      line-height: 50px;
+      text-align: center; }
