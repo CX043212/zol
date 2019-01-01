@@ -42,6 +42,9 @@ nav{
 			left:383px;
 			
 		}
+		a:hover{
+			color:red;
+		}
 		#search{
 			@include size(77px,38px,red);
 			float:left;
@@ -80,6 +83,9 @@ nav{
 				float:left;
 			}
 		}
+		a:hover{
+			color:red;
+		}
 	}
 }
 #sort{
@@ -94,6 +100,9 @@ nav{
 				line-height:40px;
 				color:white;
 				font-size:$fontSize;
+			}
+			a:hover{
+				color:red;
 			}
 		}
 		li:first-of-type{
@@ -120,17 +129,18 @@ nav{
 		margin-right:12px;
 		float:left;
 		position:relative;
-		div:first-of-type,div:nth-of-type(2){
-			@include size(260px,100px,yellow);
+		#one1,#one2{
+			width:260px;
+			height:99px;
 			img{
 				width:100px;
 				height:100px;
 			}
-			div{
+			#left,#left1{
 				width:100px;
 				height:85px;
 				@include position(absolute,110px,10px);
-				a:nth-of-type(2){
+				a{
 					color:black;
 					font-size:$fontSize;
 				}
@@ -145,25 +155,330 @@ nav{
 					font-size:$fontSize;
 					border:1px solid red;
 				}
+				a:hover{
+					color:red;
+				}
+			}
+		}
+		#left{
+			@include position(absolute,0,0);
+		}
+		#one1{
+			border-right:1px solid gray;
+			border-bottom:1px solid gray;
+		}
+		#one2{
+			@include position(absolute,0,100px);
+			border-right:1px solid gray;
+		}
+		#end1{
+			@include position(absolute,260px,0);
+			img{
+				width:70px;
+				height:70px;
+				padding:30px;
+			}
+		}
+		#end{
+			width:100px;
+			height:85px;
+			@include position(absolute,260px,100px);
+			padding:20px;
+			a{
+				color:black;
+				font-size:$fontSize;
+				text-align: center;
+			}
+			a:hover{
+				color:red;
+			}
+			p{
+				padding:10px;
+				a{
+					color:black;
+					font-size:$fontSize;
+					border-radius:4px;
+					border:1px solid gray;
+					padding:5px;
+				}
+				a:hover{
+					color:red;
+				}
+			}
+		}
+	}
+}
+#li{
+	@include size(1200px,70px,yellow);
+	margin:0 auto;
+	p{
+		height:70px;
+		line-height:70px;
+	}
+	p:first-of-type{
+		float:left;
+	}
+	p:last-of-type{
+		float:right;
+		span{
+			color:red;
+		}
+	}
+}
+#li1{
+	@include size(1200px,38px,skyblue);
+	margin:0 auto;
+	border:2px solid gray;
+	ul{
+		li{
+			float:left;
+			height:38px;
+			line-height:38px;
+			a{
+				padding:16px;
+				font-size:$fontSize;
+				color:black;
+			}
+			a:hover{
+				color:red;
+			}
+		}
+		li:first-of-type{
+			border-right:1px solid gray;
+		}
+	}
+	
+}
+#li2{
+	@include size(1200px,90px,greenyellow);
+	margin:0 auto;
+	ul{
+		li{
+			position:relative;
+			float:left;
+			height:90px;
+			line-height:90px;
+			a{
+				padding:25px;
+				font-size:16px;
+				color:black;
+				span{
+					background:url(../../dist/img/zolcom_list_ico.png) no-repeat 0 -255px;
+					width:50px;
+					height:40px;
+					@include position(absolute,0,24px);	
+					}
+			}
+			a:hover{
+				color:red;
+			}
+		}
+	}
+}
+#computer{
+	@include size(1200px,2060px,yellow);
+	margin:0 auto;
+	#left{
+		@include size(960px,2060px,pink);
+		float:left;
+		ul{
+		@include size(960px,40px,#f6f6f6);
+			li{
+				float:left;
+				font-size:12px;
+				padding:12px;
+				a{
+					font-size:12px;
+					color:black;
+				}
+				#txt1,#txt2{
+					width:50px;
+					height:20px;
+				}
+			}
+		}
+		#bottom{
+			@include display(flex,row,space-around);
+			float:left;
+			div{
+				margin-bottom:15px;
+				img{
+					width:220px;
+					height:250px;
+					margin-bottom:10px;
+				}
+				p{
+					color:red;
+					font-size:16px;
+					margin-left:10px;
+					line-height:30px;
+					}
+				span{
+					color:#a094a2;
+					font-size:$fontSize;
+					color:#b698a0;
+					line-height:33px;
+				}
+				span:first-of-type{
+					margin-right:100px;
+					margin-left:10px;
+				}
+				a{
+					color:#a094a2;
+					font-size:$fontSize;
+					display: block;
+					margin-left:10px;
+					line-height:20px;
+				}
+				#br{
+					color:black;
+				}
+				a:hover{
+					color:red;
+				}
+			}
+			div:hover{
+				border:1px solid gray;
 			}
 			
 		}
-		div:first-of-type{
-			@include position(absolute,0,0);
-			div:first-of-type{
-				border-bottom:1px solid gray;
+	}
+	#right{
+		@include size(218px,2060px,pink);
+		float:right;
+		#top{
+			@include size(218px,40px,#f6f6f6);
+			span{
+				line-height:40px;
+				height:40px;
+				font-size: $fontSize;
+			}
+			span:first-of-type{
+			float:left;
+			}
+			span:last-of-type{
+				float:right;
 			}
 		}
-		div:nth-of-type(2){
-			@include position(absolute,0,100px);
+		#bottom{
+			border:2px solid #e5e5e5;
+			div{
+				// margin-bottom:15px;
+				float:left;
+				img{
+					width:200px;
+					height:190px;
+					margin-bottom:10px;
+				}
+				p{
+					color:red;
+					font-size:16px;
+					margin-left:10px;
+					line-height:30px;
+					}
+				p:last-of-type{
+					font-size:12px;
+					color:#95999a;
+					img{
+						height:16px;
+						width:6px;
+						float:left;
+						margin-top: 10px;
+					}
+				}
+				a{
+					color:#a094a2;
+					font-size:$fontSize;
+					display: block;
+					margin-left:10px;
+					line-height:20px;
+				}
+				#br{
+					color:black;
+				}
+			}
+			
 		}
-		div:last-of-type{
-			@include size(130px,200px,yellow);
-			@include position(absolute,260px,0);
-			img{
-					width:100px;
-					height:100px;
+	}
+}
+// #page{
+// 	@include size(1200px,80px,orange);
+// 	margin:0 auto;
+// 	
+// }
+#activity{
+	@include size(1200px,272px,orange);
+	margin:0 auto;
+	p{
+		line-height:58px;
+		height:58px;
+		text-align:center;
+		font-size:14px;
+	}
+	ul{
+		 @include display(flex,row,space-between);
+	}	
+}
+#search{
+	@include size(1200px,135px,yellow);
+	margin:0 auto;
+	#sea{
+		margin:auto;
+		width:550px;
+		height:40px;
+		line-height:135px;
+		#txt{
+			height:32px;
+			width:463px;
+			border-top:2px solid #c40001;
+			border-bottom:2px solid #c40001;
+			border-left:2px solid #c40001;
+		}
+		#sub{
+			border:0;
+			border-right:2px solid #c40001;
+			@include size(75px,36px,#ed363a);
+			color:white;
+			text-align:center;
+			line-height:32px;
+		}
+	}
+}
+#guide{
+	@include size(1200px,180px,#f7f7f7);
+	margin:0 auto;
+	@include display(flex,row,space-between);
+	ul{
+		margin-top:21px;
+		li{
+			a{
+				color:black;
+				line-height:28px;
 			}
 		}
+	}
+	ul:nth-of-type(5){
+		position:relative;
+		span{
+			background:url(../../dist/img/footer.png) no-repeat 0 -97px;
+			width:50px;
+			height:50px;
+			@include position(absolute,0,10px);	
+			}
+			padding-left:60px;
+	}
+	ul:last-of-type{
+		position:relative;
+		span{
+			background:url(../../dist/img/footer.png) no-repeat 0 -227px;
+			width:50px;
+			height:50px;
+			@include position(absolute,0,10px);	
+			}
+			padding-left:60px;
+			li:last-of-type a{
+				background:red;
+				padding:5px;
+			}
 	}
 }

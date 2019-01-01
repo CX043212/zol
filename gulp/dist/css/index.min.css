@@ -369,6 +369,7 @@ nav {
       height: 280px;
       background: white;
       border: 1px solid gray;
+      position: relative;
       text-align: center; }
       #group #pre li img, #group #next li img {
         width: 220px;
@@ -377,6 +378,22 @@ nav {
       color: red; }
       #group #pre #price1 span, #group #next #price1 span {
         font-size: 14px; }
+    #group #pre #show, #group #next #show {
+      display: none;
+      width: 220px;
+      height: 220px;
+      background: black;
+      opacity: 0.5;
+      position: absolute;
+      top: 130px; }
+      #group #pre #show span, #group #next #show span {
+        color: white;
+        padding: 40px; }
+      #group #pre #show a, #group #next #show a, #group #pre #show #computer div p, #computer div #group #pre #show p, #group #next #show #computer div p, #computer div #group #next #show p {
+        border-right: 1px solid gray;
+        padding-right: 5px;
+        padding-left: 5px;
+        color: white; }
   #group #loops {
     position: absolute;
     right: 0;
@@ -678,6 +695,8 @@ nav {
       text-align: center; }
       #computer div p span {
         color: red; }
+  #computer div:hover {
+    border: 1px solid gray; }
 
 #game {
   width: 1200px;
@@ -1105,7 +1124,8 @@ nav {
   position: fixed;
   left: 0;
   top: 100px;
-  opacity: 0.5; }
+  opacity: 0.5;
+  display: none; }
   #huiding ul li {
     width: 80px;
     height: 50px;

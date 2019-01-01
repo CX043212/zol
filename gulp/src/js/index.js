@@ -38,6 +38,22 @@ $(function(){
 	},5000)
 })
 $(function(){
+	var $sh=$('#group #pre #show');
+	$('#group #pre li').mouseenter(function(){
+		$(this).next('#show').animate({height:50,opacity:'show'},500)
+	}).mouseleave(function(){
+		$(this).next('#show').animate({height:0,opacity:'none'},500)
+	});
+})
+$(function(){
+	var $sh=$('#group #next #show');
+	$sh.mouseenter(function(){
+		$sh.stop(true,true).animate({height:50,opacity:'show'},500)
+	}).mouseleave(function(){
+		$sh.stop(true,true).animate({height:0,opacity:'none'},500)
+	});
+})
+$(function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop()>=1000){
 			$('#huiding').fadeIn(1000);

@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="../../dist/css/list.min.css">
+		<script src='../js/jquery-1.11.3.js'>
+		</script>
+		<script src='../js/jquery.cookie.js'>
+		</script>
+		<script src='../js/list.js'>
+		</script>
 	</head>
 	<body>
 		<header>
@@ -46,13 +52,180 @@
 		<div id='recommend'>
 			<span>同城推荐</span>
 			<div id='one'>
-				<div><a href=""><img src="../../dist/img/sort1.jpg"></a><div><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
-				<div><a href=""><img src="../../dist/img/sort3.jpg"></a><div><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
-				<div><a href=""><img src="../../dist/img/sort2.jpg"></a></div><a href="">米家&nbsp;电磁炉</a><a href="">进入店铺</a>
+				<div id='one1'><a href=""><img src="../../dist/img/sort1.jpg"></a><div id='left'><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
+				<div id='one2'><a href=""><img src="../../dist/img/sort3.jpg"></a><div id='left1'><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
+				<div><a href="" id='end1'><img src="../../dist/img/sort2.jpg"></a></div><div id='end'><a href="">爱科生活官方...</a><p><a href="">进入店铺</a></p></div>
 			</div>
 			<div id='two'>
-				
+				<div id='one1'><a href=""><img src="../../dist/img/sort4.jpg"></a><div id='left'><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
+				<div id='one2'><a href=""><img src="../../dist/img/sort5.jpg"></a><div id='left1'><a href="">米家&nbsp;电磁炉</a><p>¥188</p><a href="">立即抢购</a></div></div>
+				<div><a href="" id='end1'><img src="../../dist/img/sort6.jpg"></a></div><div id='end'><a href="">爱科生活官方...</a><p><a href="">进入店铺</a></p></div>
 			</div>
 		</div>
+		<div id='li'>
+			<p>首页&nbsp;&nbsp;>&nbsp;&nbsp;笔记本</p>
+			<p>共<span>999</span>件</p>
+		</div>
+		<div id='li1'>
+			<ul>
+				<li><a href="">类别：</a></li>
+				<li><a href="">笔记本电脑</a></li>
+				<li><a href="">固态硬盘</a></li>
+				<li><a href="">工作站</a></li>
+				<li><a href="">鼠标</a></li>
+				<li><a href="">音箱</a></li>
+				<li><a href="">内存</a></li>
+				<li><a href="">U盘</a></li>
+				<li><a href="">主板</a></li>
+				<li><a href="">键鼠套装</a></li>
+				<li><a href=""> 人体工程学鼠标</a></li>
+				<li><a href="">键盘</a></li>
+			</ul>
+		</div>
+		<div id='li2'>
+			<ul>
+				<li><a href=""><span></span>Z商城服务保障：</a></li>
+				<li><a href=""><span></span>行货保证</a></li>
+				<li><a href=""><span></span>发票保障</a></li>
+				<li><a href=""><span></span>快递包邮</a></li>
+				<li><a href=""><span></span>无忧退换</a></li>
+				<li><a href=""><span></span>先行赔付</a></li>
+			</ul>
+		</div>
+		<div id='computer'>
+			<div id='left'>
+				<ul>
+					<li><a href="">默认</a></li>
+					<li><a href="">高人气</a></li>
+					<li><a href="">高销量</a></li>
+					<li><a href=""> 价格由低到高</a></li>
+					<li><a href="">价格由高到低</a></li>
+					<li>发货地</li>
+					<li><input type="text" placeholder="¥" id='txt1'><span>-</span><input type="text" placeholder="¥" id='txt2'></li>
+					<li><input type="checkbox" id='che1'>团购</li>
+					<li><input type="checkbox" id='che1'>店铺促销</li>
+				</ul>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list1.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list2.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list3.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list4.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<!-- <div><a href=""><img src="../../dist/img/list5.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div> -->
+				</div>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list5.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list6.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list7.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list8.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+				</div>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list9.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list10.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list11.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list12.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+				</div>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list13.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list14.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list15.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list16.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+				</div>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list17.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list18.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list19.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+					<div><a href=""><img src="../../dist/img/list20.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><span>销量数&nbsp;</span><span>评价数&nbsp;0</span><a href="">华开电脑专营店 </a></div>
+				</div>
+				
+			</div>
+			<div id='right'>
+				<div id='top'>
+					<span>本定优选</span>
+					<span>广告</span>
+				</div>
+				<div id='bottom'>
+					<div><a href=""><img src="../../dist/img/list21.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+					<div><a href=""><img src="../../dist/img/list2.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+					<div><a href=""><img src="../../dist/img/list3.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+					<div><a href=""><img src="../../dist/img/list13.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+					<div><a href=""><img src="../../dist/img/list19.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+					<div><a href=""><img src="../../dist/img/list15.jpg"></a><a href="" id='br'>【官方授权 顺丰包邮】Acer K40-10-5370 14英寸多彩影音本</a><p>¥199.00</p><a href="">华开电脑专营店 </a><p><img src="../../dist/img/address-ico.png">北京市海淀区中关村科贸电子城5层...</p></div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id='page'>
+		</div> -->
+		<div id='activity'>
+			<p>正在进行的活动</p>
+			<ul>
+				<li><a href=""><img src="../../dist/img/act.jpg"></a></li>
+				<li><a href=""><img src="../../dist/img/act1.jpg"></a></li>
+				<li><a href=""><img src="../../dist/img/act2.jpg"></a></li>
+				<li><a href=""><img src="../../dist/img/act3.jpg"></a></li>
+			</ul>
+			</div>
+			<div id='search'>
+				<div id='sea'><input type="text" id='txt'><input type="submit" id='sub' value="搜索"></div>
+			</div>
+			<div id='guide'>
+						<ul>
+							<li><a href="">购物指南</a></li>
+							<li><a href="">帐号注册</a></li>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">付款方式</a></li>
+						</ul>
+						<ul>
+							<li><a href="">售后服务</a></li>
+							<li><a href="">先行赔付</a></li>
+							<li><a href="">退款退货流程</a></li>
+							<li><a href="">投诉举报</a></li>
+						</ul>
+						<ul>
+							<li><a href="">24小时发货</a></li>
+							<li><a href="">正品保障</a></li>
+							<li><a href="">物流配送</a></li>
+							<li><a href="">发票保障</a></li>
+						</ul>
+						<ul>
+							<li><a href="">商家服务</a></li>
+							<li><a href="">商家中心</a></li>
+			
+						</ul>
+						<ul>
+							<span></span>
+							<li><a href="">400-688-1999</a></li>
+							<li><a href="">工作日 9:00 - 18:00</a></li>
+						</ul>
+						<ul>
+							<span></span>
+							<li><a href="">招商合作</a></li>
+							<li><a href="">助力3C零售商互联网转型</a></li>
+							<li><a href="">开启新零售时代全新旅程！</a></li>
+							<li><a href="">查看详细></a></li>
+						</ul>
+					</div>
+					<div id = 'footer'>
+						<ul>
+							<li><a href="">中关村在线</a></li>
+							<li><a href="">Z商城</a></li>
+							<li><a href="">团购</a></li>
+							<li><a href="">产品报价</a></li>
+							<li><a href="">论坛</a></li>
+							<li><a href="">问答</a></li>
+						</ul>
+						<div>
+							<span></span>
+							<span></span>
+							<a href="">关注新浪微博</a>
+							<img src="../../dist/img/qr.png">
+						</div>
+						<ul>
+							<li><a href="">关于Z商城</a></li>
+							<li><a href="">帮助中心</a></li>
+							<li><a href="">联系我们</a></li>
+							<li><a href=""></a></li>
+						</ul>
+						<p>©2018 中关村在线 版权所有. 京ICP证150096号京ICP备14061128号网络文化经营许可证京网文[2016]1631-199</p>
+					</div>
 	</body>
 </html>

@@ -237,9 +237,13 @@ nav{
 			color:black;
 			@include size(227px,280px,white);
 			border:1px solid gray;
+			position:relative;
 			img{
 				width:220px;
 				height:182px;
+			}
+			span{
+				
 			}
 			text-align:center;
 		}
@@ -247,6 +251,24 @@ nav{
 			color:red;
 			span{
 				font-size:14px;
+			}
+		}
+		#show{
+			display:none;
+			@include size(220px,220px,black);
+			//z-index:1000;
+			opacity:0.5;
+			position:absolute;
+			top:130px;
+			span{
+				color:white;
+				padding:40px;
+			}
+			a{
+				border-right:1px solid gray;
+				padding-right:5px;
+				padding-left:5px;
+				color:white;
 			}
 		}
 	}
@@ -573,6 +595,9 @@ nav{
 			}
 		}
 	}
+	div:hover{
+		border:1px solid gray;
+	}
 }
 #game{
 	@include size(1200px,80px,#f7f7f7);
@@ -676,7 +701,6 @@ nav{
 				color:black;
 				font-size:$fontSize;
 				display: block;
-				
 			}
 		}
 	}
@@ -1008,6 +1032,7 @@ nav{
 	left:0;
 	top:100px;
 	opacity:0.5;
+	display:none;
 	ul{
 		li{
 			@include size(80px,50px,black);

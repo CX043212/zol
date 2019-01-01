@@ -190,6 +190,8 @@ nav {
       position: absolute;
       top: 10px;
       left: 383px; }
+    nav #key a:hover {
+      color: red; }
     nav #key #search {
       width: 77px;
       height: 38px;
@@ -217,6 +219,8 @@ nav {
       width: 22px;
       height: 22px;
       float: left; }
+    nav ul a:hover {
+      color: red; }
 
 #sort {
   width: 1200px;
@@ -232,6 +236,8 @@ nav {
       line-height: 40px;
       color: white;
       font-size: 12px; }
+    #sort ul li a:hover {
+      color: red; }
   #sort ul li:first-of-type {
     background: red; }
   #sort ul a:hover {
@@ -254,48 +260,315 @@ nav {
     margin-right: 12px;
     float: left;
     position: relative; }
-    #recommend #one div:first-of-type, #recommend #one div:nth-of-type(2), #recommend #two div:first-of-type, #recommend #two div:nth-of-type(2) {
+    #recommend #one #one1, #recommend #one #one2, #recommend #two #one1, #recommend #two #one2 {
       width: 260px;
-      height: 100px;
-      background: yellow; }
-      #recommend #one div:first-of-type img, #recommend #one div:nth-of-type(2) img, #recommend #two div:first-of-type img, #recommend #two div:nth-of-type(2) img {
+      height: 99px; }
+      #recommend #one #one1 img, #recommend #one #one2 img, #recommend #two #one1 img, #recommend #two #one2 img {
         width: 100px;
         height: 100px; }
-      #recommend #one div:first-of-type div, #recommend #one div:nth-of-type(2) div, #recommend #two div:first-of-type div, #recommend #two div:nth-of-type(2) div {
+      #recommend #one #one1 #left, #recommend #one #one1 #left1, #recommend #one #one2 #left, #recommend #one #one2 #left1, #recommend #two #one1 #left, #recommend #two #one1 #left1, #recommend #two #one2 #left, #recommend #two #one2 #left1 {
         width: 100px;
         height: 85px;
         position: absolute;
         left: 110px;
         top: 10px; }
-        #recommend #one div:first-of-type div a:nth-of-type(2), #recommend #one div:nth-of-type(2) div a:nth-of-type(2), #recommend #two div:first-of-type div a:nth-of-type(2), #recommend #two div:nth-of-type(2) div a:nth-of-type(2) {
+        #recommend #one #one1 #left a, #recommend #one #one1 #left1 a, #recommend #one #one2 #left a, #recommend #one #one2 #left1 a, #recommend #two #one1 #left a, #recommend #two #one1 #left1 a, #recommend #two #one2 #left a, #recommend #two #one2 #left1 a {
           color: black;
           font-size: 12px; }
-        #recommend #one div:first-of-type div p, #recommend #one div:nth-of-type(2) div p, #recommend #two div:first-of-type div p, #recommend #two div:nth-of-type(2) div p {
+        #recommend #one #one1 #left p, #recommend #one #one1 #left1 p, #recommend #one #one2 #left p, #recommend #one #one2 #left1 p, #recommend #two #one1 #left p, #recommend #two #one1 #left1 p, #recommend #two #one2 #left p, #recommend #two #one2 #left1 p {
           color: black;
           font-size: 16px; }
-        #recommend #one div:first-of-type div a:last-of-type, #recommend #one div:nth-of-type(2) div a:last-of-type, #recommend #two div:first-of-type div a:last-of-type, #recommend #two div:nth-of-type(2) div a:last-of-type {
+        #recommend #one #one1 #left a:last-of-type, #recommend #one #one1 #left1 a:last-of-type, #recommend #one #one2 #left a:last-of-type, #recommend #one #one2 #left1 a:last-of-type, #recommend #two #one1 #left a:last-of-type, #recommend #two #one1 #left1 a:last-of-type, #recommend #two #one2 #left a:last-of-type, #recommend #two #one2 #left1 a:last-of-type {
           padding: 5px;
           color: red;
           border-radius: 4px;
           font-size: 12px;
           border: 1px solid red; }
-    #recommend #one div:first-of-type, #recommend #two div:first-of-type {
+        #recommend #one #one1 #left a:hover, #recommend #one #one1 #left1 a:hover, #recommend #one #one2 #left a:hover, #recommend #one #one2 #left1 a:hover, #recommend #two #one1 #left a:hover, #recommend #two #one1 #left1 a:hover, #recommend #two #one2 #left a:hover, #recommend #two #one2 #left1 a:hover {
+          color: red; }
+    #recommend #one #left, #recommend #two #left {
       position: absolute;
       left: 0;
       top: 0; }
-      #recommend #one div:first-of-type div:first-of-type, #recommend #two div:first-of-type div:first-of-type {
-        border-bottom: 1px solid gray; }
-    #recommend #one div:nth-of-type(2), #recommend #two div:nth-of-type(2) {
+    #recommend #one #one1, #recommend #two #one1 {
+      border-right: 1px solid gray;
+      border-bottom: 1px solid gray; }
+    #recommend #one #one2, #recommend #two #one2 {
       position: absolute;
       left: 0;
-      top: 100px; }
-    #recommend #one div:last-of-type, #recommend #two div:last-of-type {
-      width: 130px;
-      height: 200px;
-      background: yellow;
+      top: 100px;
+      border-right: 1px solid gray; }
+    #recommend #one #end1, #recommend #two #end1 {
       position: absolute;
       left: 260px;
       top: 0; }
-      #recommend #one div:last-of-type img, #recommend #two div:last-of-type img {
-        width: 100px;
-        height: 100px; }
+      #recommend #one #end1 img, #recommend #two #end1 img {
+        width: 70px;
+        height: 70px;
+        padding: 30px; }
+    #recommend #one #end, #recommend #two #end {
+      width: 100px;
+      height: 85px;
+      position: absolute;
+      left: 260px;
+      top: 100px;
+      padding: 20px; }
+      #recommend #one #end a, #recommend #two #end a {
+        color: black;
+        font-size: 12px;
+        text-align: center; }
+      #recommend #one #end a:hover, #recommend #two #end a:hover {
+        color: red; }
+      #recommend #one #end p, #recommend #two #end p {
+        padding: 10px; }
+        #recommend #one #end p a, #recommend #two #end p a {
+          color: black;
+          font-size: 12px;
+          border-radius: 4px;
+          border: 1px solid gray;
+          padding: 5px; }
+        #recommend #one #end p a:hover, #recommend #two #end p a:hover {
+          color: red; }
+
+#li {
+  width: 1200px;
+  height: 70px;
+  background: yellow;
+  margin: 0 auto; }
+  #li p {
+    height: 70px;
+    line-height: 70px; }
+  #li p:first-of-type {
+    float: left; }
+  #li p:last-of-type {
+    float: right; }
+    #li p:last-of-type span {
+      color: red; }
+
+#li1 {
+  width: 1200px;
+  height: 38px;
+  background: skyblue;
+  margin: 0 auto;
+  border: 2px solid gray; }
+  #li1 ul li {
+    float: left;
+    height: 38px;
+    line-height: 38px; }
+    #li1 ul li a {
+      padding: 16px;
+      font-size: 12px;
+      color: black; }
+    #li1 ul li a:hover {
+      color: red; }
+  #li1 ul li:first-of-type {
+    border-right: 1px solid gray; }
+
+#li2 {
+  width: 1200px;
+  height: 90px;
+  background: greenyellow;
+  margin: 0 auto; }
+  #li2 ul li {
+    position: relative;
+    float: left;
+    height: 90px;
+    line-height: 90px; }
+    #li2 ul li a {
+      padding: 25px;
+      font-size: 16px;
+      color: black; }
+      #li2 ul li a span {
+        background: url(../../dist/img/zolcom_list_ico.png) no-repeat 0 -255px;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 24px; }
+    #li2 ul li a:hover {
+      color: red; }
+
+#computer {
+  width: 1200px;
+  height: 2060px;
+  background: yellow;
+  margin: 0 auto; }
+  #computer #left {
+    width: 960px;
+    height: 2060px;
+    background: pink;
+    float: left; }
+    #computer #left ul {
+      width: 960px;
+      height: 40px;
+      background: #f6f6f6; }
+      #computer #left ul li {
+        float: left;
+        font-size: 12px;
+        padding: 12px; }
+        #computer #left ul li a {
+          font-size: 12px;
+          color: black; }
+        #computer #left ul li #txt1, #computer #left ul li #txt2 {
+          width: 50px;
+          height: 20px; }
+    #computer #left #bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      float: left; }
+      #computer #left #bottom div {
+        margin-bottom: 15px; }
+        #computer #left #bottom div img {
+          width: 220px;
+          height: 250px;
+          margin-bottom: 10px; }
+        #computer #left #bottom div p {
+          color: red;
+          font-size: 16px;
+          margin-left: 10px;
+          line-height: 30px; }
+        #computer #left #bottom div span {
+          color: #a094a2;
+          font-size: 12px;
+          color: #b698a0;
+          line-height: 33px; }
+        #computer #left #bottom div span:first-of-type {
+          margin-right: 100px;
+          margin-left: 10px; }
+        #computer #left #bottom div a {
+          color: #a094a2;
+          font-size: 12px;
+          display: block;
+          margin-left: 10px;
+          line-height: 20px; }
+        #computer #left #bottom div #br {
+          color: black; }
+        #computer #left #bottom div a:hover {
+          color: red; }
+      #computer #left #bottom div:hover {
+        border: 1px solid gray; }
+  #computer #right {
+    width: 218px;
+    height: 2060px;
+    background: pink;
+    float: right; }
+    #computer #right #top {
+      width: 218px;
+      height: 40px;
+      background: #f6f6f6; }
+      #computer #right #top span {
+        line-height: 40px;
+        height: 40px;
+        font-size: 12px; }
+      #computer #right #top span:first-of-type {
+        float: left; }
+      #computer #right #top span:last-of-type {
+        float: right; }
+    #computer #right #bottom {
+      border: 2px solid #e5e5e5; }
+      #computer #right #bottom div {
+        float: left; }
+        #computer #right #bottom div img {
+          width: 200px;
+          height: 190px;
+          margin-bottom: 10px; }
+        #computer #right #bottom div p {
+          color: red;
+          font-size: 16px;
+          margin-left: 10px;
+          line-height: 30px; }
+        #computer #right #bottom div p:last-of-type {
+          font-size: 12px;
+          color: #95999a; }
+          #computer #right #bottom div p:last-of-type img {
+            height: 16px;
+            width: 6px;
+            float: left;
+            margin-top: 10px; }
+        #computer #right #bottom div a {
+          color: #a094a2;
+          font-size: 12px;
+          display: block;
+          margin-left: 10px;
+          line-height: 20px; }
+        #computer #right #bottom div #br {
+          color: black; }
+
+#activity {
+  width: 1200px;
+  height: 272px;
+  background: orange;
+  margin: 0 auto; }
+  #activity p {
+    line-height: 58px;
+    height: 58px;
+    text-align: center;
+    font-size: 14px; }
+  #activity ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+#search {
+  width: 1200px;
+  height: 135px;
+  background: yellow;
+  margin: 0 auto; }
+  #search #sea {
+    margin: auto;
+    width: 550px;
+    height: 40px;
+    line-height: 135px; }
+    #search #sea #txt {
+      height: 32px;
+      width: 463px;
+      border-top: 2px solid #c40001;
+      border-bottom: 2px solid #c40001;
+      border-left: 2px solid #c40001; }
+    #search #sea #sub {
+      border: 0;
+      border-right: 2px solid #c40001;
+      width: 75px;
+      height: 36px;
+      background: #ed363a;
+      color: white;
+      text-align: center;
+      line-height: 32px; }
+
+#guide {
+  width: 1200px;
+  height: 180px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  #guide ul {
+    margin-top: 21px; }
+    #guide ul li a {
+      color: black;
+      line-height: 28px; }
+  #guide ul:nth-of-type(5) {
+    position: relative;
+    padding-left: 60px; }
+    #guide ul:nth-of-type(5) span {
+      background: url(../../dist/img/footer.png) no-repeat 0 -97px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  #guide ul:last-of-type {
+    position: relative;
+    padding-left: 60px; }
+    #guide ul:last-of-type span {
+      background: url(../../dist/img/footer.png) no-repeat 0 -227px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+    #guide ul:last-of-type li:last-of-type a {
+      background: red;
+      padding: 5px; }
