@@ -1,0 +1,160 @@
+@import 'public';
+#header{
+	height:170px;
+	background:#fafafa;
+	width:990px;
+	margin:0 auto;
+	span{
+		line-height:170px;
+	
+	}	
+	#lo{
+			height:40px;
+			border-left:1px solid gray;
+			padding:10px;
+		}
+	#left{
+		float:left;
+		img{
+			margin-top:50px;
+			padding:10px;
+		}
+	}
+	#right{
+		float:right;
+	}
+	a{
+		color:red;
+	}
+	a:hover{
+		background:red;
+		color:white;
+	}
+}
+#log{
+	@include size(990px,352px,#fafafa);
+	@include display(flex,row,flex-between);
+	margin:0 auto;
+	#right{
+		//background:pink;
+		//width:466px;
+		height:352px;
+		padding-left:95px;
+		span:first-of-type,span:nth-of-type(2){
+			padding-top:25px;
+			display:block;
+			float:left;
+			padding-right:10px;
+			border-bottom:1px solid gray;
+			padding-bottom:5px;
+		}
+		#uname,#pass{
+			width:291px;
+			height:36px;
+		}
+		#uname{
+			margin-top:25px;
+		}
+		#pass{
+			margin-top:8px;
+			margin-bottom:16px;
+		}
+		#sub{
+			margin-top:16px;
+			@include size(291px,39px,#dd2f2f);
+			color:white;
+			text-align:center;
+			line-height:39px;
+		}
+		#team{
+			line-height:42px;
+			height:42px;
+			text-align:center;
+		}
+		#teamwork{
+			li{
+				float:left;
+				width:40px;
+				height:38px;
+				margin:6px;
+				color:orange;
+				
+			}
+			li:nth-of-type(2){
+				background:url(../../dist/img/bg.png) no-repeat 0 -81px;
+			}
+			li:nth-of-type(2):hover{
+				background:url(../../dist/img/bg.png) no-repeat 0 -121px;
+			}
+			li:nth-of-type(3){
+				background:url(../../dist/img/bg.png) no-repeat -39px -81px;
+			}
+			li:nth-of-type(3):hover{
+				background:url(../../dist/img/bg.png) no-repeat -39px -121px;
+			}
+			li:nth-of-type(4){
+				background:url(../../dist/img/bg.png) no-repeat -78px -81px;
+			}
+			li:nth-of-type(4):hover{
+				background:url(../../dist/img/bg.png) no-repeat -78px -121px;
+			}
+			li:nth-of-type(5){
+				background:url(../../dist/img/bg.png) no-repeat -115px -81px;
+			}
+			li:nth-of-type(5):hover{
+				background:url(../../dist/img/bg.png) no-repeat -115px -121px;
+			}
+			li:first-of-type{
+				background:url(../../dist/img/bgs2.png) no-repeat 0 0;
+			}
+			li:first-of-type:hover{
+				background:url(../../dist/img/bgs2.png) no-repeat 0 -38px;
+			}
+			
+		}
+		a:first-of-type{
+			color:black;
+			float:left;
+		}
+		a:last-of-type{
+			color:blue;
+			//margin-left:100px;
+			//padding:15px;
+			float:right;
+			
+		}
+// 		span:nth-of-type(3){
+// 			position:relative;
+// 		}
+	}
+	#mob{
+			background:url(../../dist/img/shop_login_bg.png) no-repeat -280px -120px;
+	}
+}
+#void{
+	@include size(990px,186px,#fafafa);
+	margin:0 auto;
+}
+#foot{
+	@include size(990px,55px,#fafafa);
+	margin:0 auto;
+	// @include display(flex,row,flex-between);
+	ul{
+		float:left;
+		li{
+			float:left;
+			border-right:1px solid gray;
+			margin-top:16px;
+			padding-left:16px;
+			padding-right:16px;
+			a{
+				color:black;
+			}
+		}
+		
+	}
+	p{
+		float:right;
+		margin-top:16px;
+	}
+}

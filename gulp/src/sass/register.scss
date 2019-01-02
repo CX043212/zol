@@ -1,0 +1,44 @@
+@import 'public';
+#header{
+	height:170px;
+	background:#fafafa;
+	width:990px;
+	margin:0 auto;
+	span{
+		line-height:170px;
+	
+	}	
+	#lo{
+			height:40px;
+			border-left:1px solid gray;
+			padding:10px;
+		}
+	#left{
+		float:left;
+		img{
+			margin-top:50px;
+			padding:10px;
+		}
+	}
+	#right{
+		float:right;
+	}
+	a{
+		color:red;
+	}
+	a:hover{
+		background:red;
+		color:white;
+	}
+}
+#re{
+	@include size(990px,767px,#fafafa);
+	margin:0 auto;
+	p{
+		@include size(990px,60px,yellow);
+		line-height:60px;
+		text-align:center;
+		color:#99a2c0;
+		font-size:17px;
+	}
+}

@@ -56,6 +56,7 @@ header{
 		}
 		a:hover{
 			color:red;
+			text-decoration: underline;
 		}
 		ul{
 			float:right;
@@ -194,4 +195,11 @@ header{
 			@include position(absolute,-25px,0);	
 			}
 	}
+}
+#che{
+	@include size(50px,100%,black);
+	position:fixed;
+	top:0;
+	right:0;
+	opacity:0.5;
 }

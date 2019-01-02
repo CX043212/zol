@@ -95,6 +95,7 @@ nav{
 		
 		a:hover{
 			color:red;
+			text-decoration: underline;
 		}
 		#line{
 			position:absolute;
@@ -255,7 +256,7 @@ nav{
 		}
 		#show{
 			display:none;
-			@include size(220px,220px,black);
+			@include size(220px,50px,black);
 			//z-index:1000;
 			opacity:0.5;
 			position:absolute;
@@ -496,7 +497,7 @@ nav{
 		width: 1120px;
 		background:green;
 		//float: left;
-		ul{
+		ul:first-of-type{
 			li{
 				@include size(100px,45px,#ececec);
 				text-align: center;
@@ -732,12 +733,14 @@ nav{
 		@include size(592px,550px,pink);
 		position:relative;
 		#top{
-			img{
+			li{
+				img{
 				position:absolute;
 				top:0;
 				left:0;
 				width:595px;
 				height:397px;
+				}
 			}
 			#circle{
 				@include position(absolute,300px,370px);
@@ -1046,7 +1049,3 @@ nav{
 		}
 	}
 }
-// #che{
-// 	@include size(50px,800px,black);
-// 	background(url(),)
-// }

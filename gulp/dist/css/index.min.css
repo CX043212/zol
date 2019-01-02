@@ -30,7 +30,8 @@ header {
   header a, header #computer div p, #computer div header p {
     color: #3465c2; }
   header a:hover, header #computer div p:hover, #computer div header p:hover {
-    color: red; }
+    color: red;
+    text-decoration: underline; }
   header ul {
     float: right; }
     header ul a, header ul #computer div p, #computer div header ul p {
@@ -145,6 +146,15 @@ header {
       left: -25px;
       top: 0; }
 
+#che {
+  width: 50px;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.5; }
+
 nav {
   width: 1200px;
   height: 160px;
@@ -230,7 +240,8 @@ nav {
     height: 40px;
     line-height: 40px; }
   #banner ul:first-of-type a:hover, #banner ul:first-of-type #computer div p:hover, #computer div #banner ul:first-of-type p:hover {
-    color: red; }
+    color: red;
+    text-decoration: underline; }
   #banner ul:first-of-type #line {
     position: absolute;
     z-index: 1000;
@@ -381,7 +392,7 @@ nav {
     #group #pre #show, #group #next #show {
       display: none;
       width: 220px;
-      height: 220px;
+      height: 50px;
       background: black;
       opacity: 0.5;
       position: absolute;
@@ -602,7 +613,7 @@ nav {
     position: relative;
     width: 1120px;
     background: green; }
-    #earphone #first ul li {
+    #earphone #first ul:first-of-type li {
       width: 100px;
       height: 45px;
       background: #ececec;
@@ -841,7 +852,7 @@ nav {
     height: 550px;
     background: pink;
     position: relative; }
-    #appliance #left #top img {
+    #appliance #left #top li img {
       position: absolute;
       top: 0;
       left: 0;

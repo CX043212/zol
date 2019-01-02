@@ -30,7 +30,8 @@ header {
   header a {
     color: #3465c2; }
   header a:hover {
-    color: red; }
+    color: red;
+    text-decoration: underline; }
   header ul {
     float: right; }
     header ul a {
@@ -144,6 +145,15 @@ header {
       position: absolute;
       left: -25px;
       top: 0; }
+
+#che {
+  width: 50px;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.5; }
 
 nav {
   width: 1200px;
